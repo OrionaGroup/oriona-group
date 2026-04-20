@@ -45,7 +45,7 @@ export default function Navbar() {
     >
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-          Oriona<span className={styles.dot}>.</span>
+          ORIONA<span className={styles.dot}>.</span>
         </Link>
 
         {/* Desktop Nav */}

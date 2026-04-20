@@ -38,7 +38,7 @@ export default function Hero() {
       <div className={`container ${styles.heroContainer}`}>
         <h1 ref={headlineRef} className={styles.headline} style={{ perspective: "1000px" }}>
           Explora el universo digital con <br className={styles.desktopBreak} />
-          <span className="text-gradient">Oriona</span>.
+          <span className="text-gradient">ORIONA</span>.
         </h1>
         <p ref={subheadRef} className={styles.subheadline}>
           Agencia de marketing digital y desarrollo web que impulsa marcas hacia nuevas galaxias. Diseñamos experiencias que orbitan alrededor del éxito.
