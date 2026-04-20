@@ -126,7 +126,7 @@ export default function OrionaScrollView({ heroImage }: { heroImage: string }) {
         {/* A. HERO INITIAL (100vh) */}
         <section className={styles.vHSection}>
           <div className={styles.heroTextCenter} ref={textHeroRef}>
-            <h1 className={styles.massiveTitle}>Oriona</h1>
+            <h1 className={styles.massiveTitle}>ORIONA</h1>
             <p className={styles.massiveSubtitle}>Una nueva dimensión digital</p>
           </div>
           {/* Scroll Indicator interno */}
