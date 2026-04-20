@@ -1,0 +1,31 @@
+.cursorOutline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(234, 246, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  /* GSAP maneja x/y, si usamos translate(-50%, -50%) estropeamos las coordenadas porque GSAP ya resta la mitad */
+}
+
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+@media (max-width: 768px) {
+  /* Apagar el cursor custom en móviles para que no estorbe */
+  .cursorOutline, .cursorDot {
+    display: none !important;
+  }
+}

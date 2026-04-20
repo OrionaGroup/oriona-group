@@ -1,0 +1,102 @@
+.aboutSection {
+  padding: 8rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .aboutContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+}
+
+.textWrapper {
+  flex: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  color: var(--color-text);
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+.valuesGrid {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .valueCard:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+}
+
+.valueCard {
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 245, 255, 0.3);
+}
+
+.iconWrapper {
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  padding: 1rem;
+  background: rgba(11, 31, 58, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(234, 246, 255, 0.1);
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}

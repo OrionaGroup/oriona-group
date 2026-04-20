@@ -1,0 +1,139 @@
+.processSection {
+  padding: 8rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.title {
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.timelineWrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lineBg {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  background: rgba(234, 246, 255, 0.1);
+  z-index: 1;
+}
+
+.lineActive {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 0%;
+  background: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .lineBg, .lineActive {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.step {
+  position: relative;
+  margin-bottom: 4rem;
+  padding-left: 60px;
+}
+
+@media (min-width: 768px) {
+  .step {
+    padding-left: 0;
+    width: 50%;
+  }
+
+  .stepLeft {
+    left: 0;
+    padding-right: 40px;
+  }
+
+  .stepRight {
+    left: 50%;
+    padding-left: 40px;
+  }
+}
+
+.stepDot {
+  position: absolute;
+  top: 30px;
+  left: 17px;
+  width: 8px;
+  height: 8px;
+  background: var(--color-text);
+  border-radius: 50%;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.step:hover .stepDot {
+  background: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+  transform: scale(1.5);
+}
+
+@media (min-width: 768px) {
+  .stepLeft .stepDot {
+    left: auto;
+    right: -4px;
+  }
+
+  .stepRight .stepDot {
+    left: -4px;
+  }
+}
+
+.stepContent {
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.stepContent:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 245, 255, 0.3);
+}
+
+.stepPhase {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(234, 246, 255, 0.05);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  pointer-events: none;
+}
+
+.stepTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.stepDesc {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
