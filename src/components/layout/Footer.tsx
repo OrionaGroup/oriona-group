@@ -21,9 +21,9 @@ export default function Footer() {
           <h4 className={styles.linksTitle}>Navegación</h4>
           <ul className={styles.linkList}>
             <li><Link href="/">Inicio</Link></li>
-            <li><Link href="#about">Agencia</Link></li>
-            <li><Link href="#services">Constelaciones</Link></li>
-            <li><Link href="#portfolio">Misiones</Link></li>
+            <li><Link href="#about">Sobre nosotros</Link></li>
+            <li><Link href="#services">Servicio</Link></li>
+            <li><Link href="#portfolio">Portfolio</Link></li>
           </ul>
         </div>
         

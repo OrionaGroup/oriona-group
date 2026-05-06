@@ -33,9 +33,9 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Inicio", href: "/" },
-    { name: "Agencia", href: "#about" },
-    { name: "Constelaciones", href: "#services" },
-    { name: "Misiones", href: "#portfolio" },
+    { name: "Sobre nosotros", href: "#about" },
+    { name: "Servicios", href: "#services" },
+    { name: "Portfolio", href: "#portfolio" },
   ];
 
   return (
