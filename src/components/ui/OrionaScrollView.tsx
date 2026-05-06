@@ -136,9 +136,9 @@ export default function OrionaScrollView({ heroImage }: { heroImage: string }) {
         </section>
 
         {/* B. SECTION: INTRO (100vh spacer) */}
-        <section className={styles.vHSection}>
+        <section id="about" className={styles.vHSection}>
           <div className={`glass-panel ${styles.introPanel}`} ref={introSectionRef}>
-            <h2 className={styles.sectionTitle}>Refracción <span className="text-gradient about">Innovadora</span></h2>
+            <h2 className={styles.sectionTitle}>Refracción <span className="text-gradient">Innovadora</span></h2>
             <p className={styles.introDesc}>
               A través de un enfoque prismático, fragmentamos modelos tradicionales para emitir soluciones luminosas. Un ecosistema dinámico donde tu visión de negocio se convoca y proyecta hacia nuevos usuarios en todo el espectro web.
             </p>
