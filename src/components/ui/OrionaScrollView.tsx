@@ -138,9 +138,9 @@ export default function OrionaScrollView({ heroImage }: { heroImage: string }) {
         {/* B. SECTION: INTRO (100vh spacer) */}
         <section id="about" className={styles.vHSection}>
           <div className={`glass-panel ${styles.introPanel}`} ref={introSectionRef}>
-            <h2 className={styles.sectionTitle}>Refracción <span className="text-gradient">Innovadora</span></h2>
+            <h2 className={styles.sectionTitle}>¿Quiénes <span className="text-gradient">somos?</span></h2>
             <p className={styles.introDesc}>
-              A través de un enfoque prismático, fragmentamos modelos tradicionales para emitir soluciones luminosas. Un ecosistema dinámico donde tu visión de negocio se convoca y proyecta hacia nuevos usuarios en todo el espectro web.
+              Pablo y Álvaro son dos jóvenes emprendedores que, aprovechando la modernización de los negocios locales de su pueblo natal, Sanxenxo, comenzaron a ofrecer soluciones a estos, como Webs mucho más visuales, dinámicas, y en general mejoradas. A raíz de este inicio, comenzaron a formarse en automatizaciones con IA y con el tiempo a ofrecerlas también. Actualmente están trabajando a nivel nacional y siguen igual de ilusionados que el primer día.
             </p>
           </div>
         </section>
